@@ -1,0 +1,26 @@
+.mdc-list {
+  padding-top:0;
+}
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  text-align: center;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+ // position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
