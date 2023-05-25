@@ -1,22 +1,14 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <button type="button" aria-label="Toggle sidenav" mat-icon-button>
+    <button type="button" aria-label="Toggle sidenav" (click)="OnMenuChange()" mat-icon-button>
       <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
     </button>
     <span>TuesTask</span>
-    <span class="example-spacer"></span>
-    <button
-      mat-icon-button
-      class="example-icon favorite-icon"
-      aria-label="Example icon-button with heart icon"
-    >
+    <span class="header-spacer"></span>
+    <button mat-icon-button class="favorite-icon" aria-label="settings">
       <mat-icon>settings</mat-icon>
     </button>
-    <button
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with share icon"
-    >
+    <button mat-icon-button class="" aria-label="Person">
       <mat-icon>person</mat-icon>
     </button>
   </mat-toolbar-row>

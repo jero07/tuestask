@@ -1,5 +1,6 @@
-<app-header></app-header>
-<mat-drawer-container>
+<app-header (toggle)="toggle()"></app-header>
+<mat-drawer-container 
+(backdropClick)="closesidenav()">
   <!-- <mat-drawer #drawer [opened]="(isHandset$ | async) === false"
    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="isMenuOpen"> -->
   <mat-drawer
@@ -8,6 +9,7 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="isMenuOpen"
+    (keydown.escape)="closesidenav()"
   >
     <app-sidenav></app-sidenav>
   </mat-drawer>
